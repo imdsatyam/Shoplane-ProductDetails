@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const img = document.createElement("img");
             img.src = photo;
             img.alt = `Product Preview ${index + 1}`;
-            img.classList.add("preview-image", "border", "border-gray-300", "m-1", "p-1", "rounded"); // Add Tailwind CSS classes with margin
+            img.classList.add("preview-image", "border", "border-green-500","border-2", "m-1", "p-1", "rounded"); // Add Tailwind CSS classes with margin
 
             // Add hover effect to apply the border
             img.addEventListener("mouseenter", () => {
