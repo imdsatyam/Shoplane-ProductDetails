@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+    <title>Shoplane</title>
+</head>
+<body>
+    <div class="main">
+        <div class="product-details productfeature flex flex-row mx-40 mt-24 mb-20">
+            <!-- Product Image -->
+            <div class="product-image w-2/5">
+                <img id="productImage" src="" alt="Product Image" class="w-full h-full">
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info ml-10 w-3/5">
+                <h1 id="productName" class="text-6xl font-medium pb-5"></h1>
+                <h4 id="productBrand" class="text-3xl tracking-widest pb-5"></h4>
+                <h3 id="productPrice" class="text-3xl tracking-widest pb-5"></h3>
+                <h3 class="text-3xl tracking-widest pb-5">Description</h3>
+                <p id="productDescription" class="text-xl tracking-widest pb-5" style="color: #6e6e6e;"></p>
+
+                <!-- Product Preview -->
+                <h4 class="text-3xl tracking-widest pb-5">Product Preview</h4>
+                <div class="imagepreview flex flex-row pb-10 w-1/6">
+                    <!-- Product Images -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="Index.js"></script>
+</body>
+</html>
