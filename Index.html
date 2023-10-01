@@ -5,10 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./Index.css">
     <style type="text/tailwindcss">
         @layer utilities {
             .content-auto {
                 content-visibility: auto;
+            }
+        }
+    </style>
+    <style>
+        html{
+            font-size: 62.5%;
+        }
+        #productDescription{
+            color: #6e6e6e;
+        }
+
+        @media (max-width:1420px) {
+            html{
+                font-size: 60%;
+            }
+        }
+
+        @media (max-width:1280px) {
+            html{
+                font-size: 50%;
+            }
+        }
+
+        @media (max-width:998px) {
+            html{
+                font-size: 40%;
+            }
+        }
+
+        @media (max-width:768px) {
+            html{
+                font-size: 35%;
+            }
+            .product-image{
+                width: 100% !important;
+            }
+
+            .product-info{
+                width: 100% !important;
+            }
+
+            .productfeature{
+                flex-direction: column !important;
+                margin: 5rem !important;
+            }
+        }
+
+        @media (max-width:580px) {
+            html{
+                font-size: 20%;
+            }
+
+            .product-image{
+                width: 100% !important;
+            }
+
+            .product-info{
+                width: 100% !important;
+            }
+
+            .productfeature{
+                flex-direction: column !important;
+                margin: 5rem !important;
+            }
+        }
+
+        @media (min-width:480px) and (max-width:580px) {
+            html{
+                font-size: 30%;
+            }
+            .product-image{
+                width: 100% !important;
+            }
+
+            .product-info{
+                width: 100% !important;
+            }
+
+            .productfeature{
+                flex-direction: column !important;
+                margin: 5rem !important;
+            }
+        }
+
+        @media (min-width:320px) and (max-width:480px) {
+            html{
+                font-size: 21%;
+            }
+            .product-image{
+                width: 100% !important;
+            }
+
+            .product-info{
+                width: 100% !important;
+            }
+
+            .productfeature{
+                flex-direction: column !important;
+                margin: 5rem !important;
             }
         }
     </style>
@@ -24,15 +124,15 @@
 
             <!-- Product Info -->
             <div class="product-info ml-10 w-3/5">
-                <h1 id="productName" class="text-6xl font-medium pb-5"></h1>
-                <h4 id="productBrand" class="text-3xl tracking-widest pb-5"></h4>
-                <h3 id="productPrice" class="text-3xl tracking-widest pb-5"></h3>
-                <h3 class="text-3xl tracking-widest pb-5">Description</h3>
-                <p id="productDescription" class="text-xl tracking-widest pb-5" style="color: #6e6e6e;"></p>
+                <h1 id="productName" class="text-8xl font-medium pb-10"></h1>
+                <h4 id="productBrand" class="text-5xl tracking-widest pb-10"></h4>
+                <h3 id="productPrice" class="text-5xl tracking-widest pb-10"></h3>
+                <h3 class="text-5xl tracking-widest pb-10">Description</h3>
+                <p id="productDescription" class="text-3xl tracking-widest pb-10"></p>
 
                 <!-- Product Preview -->
-                <h4 class="text-3xl tracking-widest pb-5">Product Preview</h4>
-                <div class="imagepreview flex flex-row pb-10 w-1/6">
+                <h4 class="text-5xl tracking-widest pb-10">Product Preview</h4>
+                <div class="imagepreview flex flex-row pb-15 w-1/6">
                     <!-- Product Images -->
                 </div>
             </div>

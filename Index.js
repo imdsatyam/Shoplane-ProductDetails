@@ -57,10 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             img.addEventListener("click", () => handleImageClick(index)); // Add click event listener
-
-            if (index === selectedImageIndex) {
-                img.classList.add("selected");
-            }
             imagePreviews.appendChild(img); // Append the image to the container
         });
     }
